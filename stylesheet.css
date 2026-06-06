@@ -1,0 +1,153 @@
+h1 {color: gold;font-family: sans-serif;font-size: 70px;text-align: center;background-color: purple}
+
+h2 { color: gold; font-size: 50px;font-family: serif; background-color: purple;text-align: center}
+
+p {color:purple;font-family: sans-serif;font-size: 30px;text-align: center}
+
+img {display: block;margin-left: auto;margin-right: auto;
+    padding: 10px;
+    background-color: gold;
+    border-radius: 10px;
+}
+
+
+.top-navigation {background-color: purple}
+
+.top-navigation ul {list-style: none;
+    
+                    padding: 20px;
+                    margin: 10px;
+                    display: flex;
+                    justify-content: center;}
+
+.top-navigation li {margin: 0 40px;}
+
+
+.top-navigation a {text-decoration: none;
+                   color: antiquewhite;
+                   font-weight: bold;
+                   font-size: 20px;
+                   padding: 20px;
+                   transition: color 0.3 ease;
+                   font-family: sans-serif;}
+.top-navigation a:hover {color: gold}
+
+
+
+body {
+  margin: 0;
+}
+
+
+.slider {
+  width: 1280px;
+  height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;}
+
+.slider figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;}
+
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: slideshow 9s infinite;}
+
+
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 3s; }
+.slider img:nth-child(3) { animation-delay: 6s; }
+
+
+@keyframes slideshow {
+  0%   { opacity: 1; }
+  33%  { opacity: 1; }
+  34%  { opacity: 0; }
+  100% { opacity: 0; }}
+
+.slider img {
+  border: none;}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gold;
+  font-size: 55px;
+  font-weight: bold;
+  text-shadow: 0 0 15px black;
+  z-index: 10;
+  pointer-events: none;}
+
+/* Navigation Style */
+nav {
+background-color: #333;
+padding: 10px;
+text-align: center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-family: Arial, sans-serif;
+font-size: 18px;
+}
+
+nav a:hover {
+color: #ffd166;
+}
+
+/* Gallery Container */
+.gallery {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+/* Gallery Images */
+.gallery img {
+width: 250px;
+height: 400px;
+object-fit: cover;
+border-radius: 10px;
+border: 3px solid #ddd;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery img:hover {
+transform: scale(1.1);
+box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+
+
+
+img {
+  border: 4px solid purple;
+}
+
+figure {text-align:center}
+
+figcaption {color: purple;font-size: larger}
+
+body { background-color: gold;color: black;}
+
+h4 {text-align: center;color: purple}
+a  {text-align: center}
+div {text-align: center}
+footer {text-align: center; color: purple}
